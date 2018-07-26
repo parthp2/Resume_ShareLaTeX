@@ -1,0 +1,249 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.21in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+%\documentclass{article}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+% title on top of the document
+\maintitle{Parth Patel}{August 01, 1994}{Last update on \today }
+
+\nobreakvspace{0.4em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:patelparth622.at.gmail.dot.com}{patelparth622\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}1 (626)493-3759\sbull
+{\newnums \href{https://github.com/parthp2}{parthp2 (Github)}\sbull
+{\newnums \href{http://www.patelparth.net/}{Portfolio}\sbull
+{\mewmums \href{https://www.linkedin.com/in/parthpatelp2/}{www.linkedin.com/in/parthpatelp2}
+\\
+{Los Angeles\sbull
+California\sbull
+United States
+}
+\spacedhrule{0.0em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Experience}
+
+
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://web.calstatela.edu/library/}{University Library, Cal State LA}}
+  {\textsc{Los Angeles, United States}} {%
+  \headedsubsection
+    {Web Developer Assistant}
+    {March \apo17 -- present}
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Works with library web team on re-designing of  Library website and to add some additional features to the website. Responsible for developing front-end to create UI for web and mobile optimized formats.
+        \item Created interactive floor maps using Javascript and relational database to give detailed information and to show available library resources on each floor.
+        \item Manage back-end of website, construct online forms and conduct online assessments, analytics and surveys.Create visualization effects and animations of web components and develop images for web optimization formats.
+        \item \textbf{\small{ PHP |HTML5 | CSS3 | AJAX | JQuery | Dropal | MySQL | RaphaelJS | Photoshop | MagnificPop  }}
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{https://www.linkedin.com/company/incisive-web-solution-pvt-ltd-/}{Incisive Web Solution Pvt. Ltd.}}
+  {\textsc{Gujarat, India}} {%
+  \headedsubsection
+    {Jr. Software Developer}
+    {June \apo15 -- May \apo16}
+    {\bodytext{
+    \begin{itemize}
+        \item Involved with all phases of Software development from initial concepts, design, development, testing and deployment. 
+        \item Participated in brainstorming and user feedback sessions to gather input to apply changes for prototype iterations. 
+        \item Designed and developed SaaS based product as per client requirement.
+        \item  Worked in a team to deliver End-to-End development of software solutions across multiple stages of Software Development Life.
+        \item \textbf{\small{ Java | Hibernate | Spring MVC | MySQL | Javascript | REST API | Junit | TestNG | NodeJS | GIT  }}
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{https://www.linkedin.com/company/incisive-web-solution-pvt-ltd-/}{Incisive Web Solution Pvt. Ltd.}}
+  {\textsc{Gujarat, India}} {%
+  \headedsubsection
+    {Java Developer Intern}
+    {June \apo14 -- May \apo15}
+    {\bodytext{
+    \begin{itemize}
+        \item Worked on different e-commerce web projects for local markets and Maintain and optimize current ongoing SAAS projects and perform time to time testing and updates.
+        \item Worked with senior level developers to create projects from scratch, developing web design templets, database schema, DFD, ER diagrams.
+        \item \textbf{\small{ PHP | CakePHP | Java | HTML5 | CSS3 | JSP | Javascript }}
+    \end{itemize}}}
+}
+
+\spacedhrule{0.0em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.calstatela.edu/}{California State University,Los Angeles} }
+  {\textsc{California, United States}} {%
+  \headedsubsection
+    {Master of Science in Computer Science}
+    {Graduate - August \apo18}
+    {}
+}
+
+
+\headedsection
+  {\href{https://www.gtu.ac.in/}{Gujarat Technological University } }
+  {\textsc{Gujarat, India}} {%
+  \headedsubsection
+    {Bachelor of Engineering in Computer Engineering}
+    {Graduated - May \apo15}
+    {}
+}
+
+\spacedhrule{0.0em}{-0.4em}
+
+\roottitle{Skills}
+{\bodytext{
+  \begin{tabular}{ll}
+    %\midrule
+    \tabitem \textbf{Programming Languages} & Java, C++, Android, Python, Haskell \\[.1\normalbaselineskip]
+    \tabitem \textbf{Web Technologies} & Javascript, NodeJS-Express, JAX-WS, AJAX, Spring, Rest Web-Services \\[.1\normalbaselineskip]
+    \tabitem \textbf{Front-end Technologies} & Html 5, CSS, AngularJs, VueJS, Bootstrap, React, Redux, JSP, XML \\[.1\normalbaselineskip]
+    \tabitem \textbf{Databases/Middleware} & MySQL, MongoDB, Postgre SQL, AWS RDS, Oracle, RabbitMQ, Redis \\[.1\normalbaselineskip]
+    \tabitem \textbf{Testing Tools and Frameworks} \hspace{.3cm}  &  JMeter, JUnit, TestNG, MockTest, Jasmine, Mocha, Selenium \\[.1\normalbaselineskip]
+    \tabitem \textbf{Cloud Technologies} &  AWS, Heroku, Google App Engine, Google Compute Engine, IBM Bluemix \\[.1\normalbaselineskip]
+    \tabitem \textbf{SCM and Versioning Tools} & Git, Gradle, Maven, Intellij, Eclipse , Android Studio, Jupyter Notebook \\[.1\normalbaselineskip]
+    
+  \end{tabular}
+}}
+
+\spacedhrule{0.0em}{-0.4em}
+
+\roottitle{Academic Projects}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/parthp2/techit-server-java}{TechIt}
+  \textbf{
+  \small{(J2EE | Spring MVC | Hibernate | Maven | REST API's | MySQL | NodeJs | Angular | MongoDB)}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Designed and developed TechIt using 3 tier architecture for ECST's TechOPs.
+        \item Create order and assignment to designated team, prioritize and update status of order. Multiple administrative access to manage system.
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/parthp2/Mars-Rover-Simulation}{Mars Rover Simulation}
+  \textbf{
+  \small{(NodeJS | ExpressJS | JSON | REST API | Java | J2EE)}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item J2EE-based project simulating Mars rovers on a planet surface, runs on a server built with Node and Express. Collaborated with three different teams to share coordinates of each rover via REST service. Uses live communication server to ensure accurate path finding.
+        \item Build an AI for ROVER movement and science harnessing based on coordinates and data received from REST server.
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/parthp2/TodoApp}{Collaborative To-Do App}
+  \textbf{
+  \small{(NodeJs | VueJs | Bulma | Web Sockets | MongoDB | HTML | CSS)}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Collaborative web application that allow users to create projects and to-do's within projects.
+        \item Using web sockets made real time web application to display, add, remove and to mark todo done and undone for all the projects and todos.
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/parthp2/ScoreTracker-CS5540}{ScoreTracker Android App}
+  \textbf{
+  \small{(Android Studio | Google Firebase | Java | REST API | JSP | Thread | Gradle | XML)}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Android application that provides real-time score for MLB, NBA using Firebase Job Dispatcher, Job Scheduler and live score usingREST API calls to a live server.
+        \item Embedded map with Google Maps Directions API showing direction from current location to match venue.
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/parthp2/House-Sales-Prediction}{House Sales Prediction}
+  \textbf{
+  \small{(Python | Pandas | NumPy | Scikit-learn | Linear Regression | KNN | Random forest | PCA)}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Using various machine learning algorithms such as Linear Regression, Random Forest and Polynomial Regression and techniques such as PCA, Data normalization, Data Scaling designed a prediction model to predict sale price of a house in king county based on various features.
+        \item Provides a comprehensive insight into the data and feature correlation using Mat plotlib, Heatmap and Scatter plot.
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/parthp2/CS3220_Spring_2017/tree/CS3220/HW7}{File Management System}
+  \textbf{
+  \small{(JSP | Hibernate | Ajax | MySQL | HTML | CSS | Javascript)}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Developed a web application using hibernate framework and mysql database to maintain files.
+        \item Application let users search for new files, upload new files, share and download files, create folders, login and logout.
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/parthp2/Bull-and-Fool}{Bull and Fool}
+  \textbf{
+  \small{(Java | JavaFx | CSS )}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Developed desktop game bull and fool, bull try to catch fool in maze map and fool move by direction key of keyboard.
+    \end{itemize}}}
+}
+
+\end{document}
+\documentclass[oneside]{book}
